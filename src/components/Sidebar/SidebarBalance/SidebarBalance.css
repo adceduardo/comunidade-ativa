@@ -1,0 +1,17 @@
+.card-balance{
+    padding: 16px;
+    margin: 16px 32px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-tertiary);
+    border-radius: 8px;
+    
+    p{
+        color: var(--text-emphasis);
+        font-size: var(--fs-md);
+    }
+
+    strong{
+        color: var(--text-primary);
+    }
+}

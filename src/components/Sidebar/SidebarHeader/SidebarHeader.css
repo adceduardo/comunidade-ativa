@@ -1,0 +1,18 @@
+.sidebar-header {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  gap: 16px;
+  
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  h1{
+    font-size: var(--fs-xl);
+  }
+}
