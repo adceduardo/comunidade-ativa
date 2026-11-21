@@ -1,0 +1,64 @@
+.dashboard-header-container{
+  padding: 32px 0;
+  height: 132px;
+}
+
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 48px;
+
+  .input-container {
+    position: relative;
+    width: 100%;
+    caret-color: var(--text-primary);
+
+    input {
+      width: 100%;
+      background-color: transparent;
+      height: 48px;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--bs-gray-700);
+      font-size: var(--fs-lg);
+      color: var(--text-secondary);
+      outline: none;
+    }
+
+    input[type="text"]::placeholder {
+      color: var(--text-secondary);
+    }
+
+    svg {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    svg:hover {
+      color: var(--primary-hover);
+    }
+  }
+
+  .filter-container {
+    border: 1px solid var(--bs-gray-700);
+    border-radius: 8px;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    svg:hover {
+      color: var(--primary-hover);
+    }
+  }
+}
