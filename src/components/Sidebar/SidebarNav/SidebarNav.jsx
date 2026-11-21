@@ -2,6 +2,7 @@
 import { Nav } from "react-bootstrap";
 import "./SidebarNav.css";
 
+//Icons
 import {
   FiSearch,
   FiGrid,
@@ -10,15 +11,17 @@ import {
   FiUser,
   FiShield,
 } from "react-icons/fi";
+
+//Components
 import { NavLink } from "react-router-dom";
 
 export function SideBarNav() {
   const navItems = [
     { label: "Explorar Anúncios", to: "/", Icon: FiSearch },
-    { label: "Meus Anúncios", to: "/teste", Icon: FiGrid },
-    { label: "Extrato de Créditos", to: "/teste1", Icon: FiCreditCard },
-    { label: "Agendamentos", to: "/teste2", Icon: FiCalendar },
-    { label: "Meu Perfil", to: "/teste3", Icon: FiUser },
+    { label: "Meus Anúncios", to: "/meus-anuncios", Icon: FiGrid },
+    { label: "Extrato de Créditos", to: "/extrato", Icon: FiCreditCard },
+    { label: "Agendamentos", to: "/agendamentos", Icon: FiCalendar },
+    { label: "Meu Perfil", to: "/perfil", Icon: FiUser },
   ];
 
   return (

@@ -1,9 +1,11 @@
+//Styles
 import "./DashboardHeader.css";
 
-import { FiFilter } from "react-icons/fi";
-import { FiSearch } from "react-icons/fi";
+//Icons
+import { FiPlus, FiFilter, FiSearch } from "react-icons/fi";
+
+//Components
 import { CustomButton } from "../../CustomButtom/CustomButton";
-import { FiPlus } from "react-icons/fi";
 
 export function DashboardHeader() {
   return (
