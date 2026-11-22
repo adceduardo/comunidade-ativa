@@ -9,6 +9,8 @@
 
   --color-secondary: #68a2bd;
   --color-tertiary: #0c5e69;
+  --color-light: #f0f6f7;
+  --color-dark: #000;
 
   --bg-app: #06181b;
   --bg-sidebar: #092830;
@@ -21,9 +23,14 @@
   --text-secondary: #9db4be;
   --text-emphasis: #c3edff;
   --text-light: #ddf6ff;
+  --text-highlight: #00ffd2;
 
   --primary-hover: #1eebff;
   --text-hover: #06181b;
+
+  --shadow-color: #f0f6f7;
+  
+  --bg-btn-secondary: #005b85;
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
@@ -48,6 +55,18 @@ h1 {
 }
 
 p,
-h1 {
+h1,
+h3 {
   margin: 0;
+}
+
+.backdrop-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5 12 13 / 44%);
+  backdrop-filter: blur(4px);
+  z-index: 1;
 }

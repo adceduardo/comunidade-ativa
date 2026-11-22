@@ -19,8 +19,8 @@ export function SideBarNav() {
   const navItems = [
     { label: "Explorar Anúncios", to: "/", Icon: FiSearch },
     { label: "Meus Anúncios", to: "/meus-anuncios", Icon: FiGrid },
-    { label: "Extrato de Créditos", to: "/extrato", Icon: FiCreditCard },
     { label: "Agendamentos", to: "/agendamentos", Icon: FiCalendar },
+    { label: "Extrato de Créditos", to: "/extrato", Icon: FiCreditCard },
     { label: "Meu Perfil", to: "/perfil", Icon: FiUser },
   ];
 
@@ -44,7 +44,7 @@ export function SideBarNav() {
         to={"/admin"}
         end
         className={({ isActive }) => `nav-link ${isActive ? "is-active" : ""}`}
-        style={{marginTop: 'auto'}}
+        style={{ marginTop: "auto" }}
       >
         <FiShield size={20}></FiShield>
         <span>Painel Admin</span>

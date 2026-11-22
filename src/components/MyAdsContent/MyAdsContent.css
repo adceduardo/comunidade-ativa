@@ -1,0 +1,7 @@
+.my-ads-container {
+  margin: 32px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 12px 0px var(--bs-gray-700);
+  content: "";
+}

@@ -8,6 +8,7 @@
   color: var(--text-secondary);
   padding: 16px;
   min-width: 300px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   flex: 1;

@@ -1,15 +1,15 @@
 .custom-button {
   padding: 8px 16px;
-  background-color: var(--color-tertiary);
+
   border: none;
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--bs-gray-200);
+  color: var(--color-light);
   border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   font-weight: bold;
   transition: 0.4s;
 
@@ -20,12 +20,19 @@
 }
 
 .custom-button:hover {
-  background-color: #316d75;
   border-color: #1b3d4f;
   color: var(--color-tertiary);
   background-color: var(--bs-gray-100);
 
-  svg{
+  svg {
     color: var(--color-tertiary);
   }
+}
+
+.button-primary {
+  background-color: var(--color-tertiary);
+}
+
+.button-secondary {
+  background-color: var(--bg-btn-secondary);
 }

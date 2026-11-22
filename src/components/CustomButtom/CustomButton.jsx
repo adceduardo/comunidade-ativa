@@ -1,9 +1,9 @@
 import "./CustomButton.css"
 
-export function CustomButton({ label, Icon, ...props }) {
+export function CustomButton({ label, Icon, handleClick, variant = "primary", iconSize, ...props }) {
   return (
-    <button className="custom-button" {...props}>
-      {Icon && <Icon size={24}></Icon>}
+    <button className={`custom-button button-${variant}`} onClick={handleClick} {...props}>
+      {Icon && <Icon size={iconSize ? iconSize : "24"}></Icon>}
       <span>{label}</span>
     </button>
   );

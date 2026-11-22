@@ -1,0 +1,148 @@
+@keyframes cardOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes cardClose {
+  from {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+}
+
+.card-details-container {
+  position: absolute;
+  inset: 0;
+  width: 65%;
+  height: 60%;
+  margin: auto;
+  min-height: 300px;
+  background-color: var(--bg-card);
+  color: #fff;
+  z-index: 2;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px var(--bs-gray-500);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  max-width: 992px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+    }
+
+    h3 {
+      font-size: var(--fs-xl);
+      font-weight: bold;
+      color: #fff;
+
+      span {
+        color: var(--bs-cyan);
+      }
+    }
+  }
+
+  .content {
+    height: 100%;
+    border-radius: 8px;
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+
+    .card-info {
+      width: 60%;
+      color: var(--text-secondary);
+      display: flex;
+      flex-direction: column;
+
+      .card-categorie {
+        display: flex;
+        gap: 8px;
+        justify-content: left;
+
+        p {
+          background-color: var(--color-tertiary);
+          border-radius: 12px;
+          padding: 2px 12px;
+          font-size: var(--fs-md);
+          white-space: nowrap;
+          color: #fff;
+        }
+      }
+
+      .info-description {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+        .endereco {
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .card-action {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: space-between;
+
+      .tags {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .tag {
+          padding: 16px;
+          background-color: #0f2225;
+          border-radius: 4px;
+          font-weight: bold;
+          box-shadow: 0px 0px 1px 0px;
+
+          span {
+            color: var(--text-secondary);
+          }
+
+          svg {
+            color: var(--bs-yellow);
+          }
+        }
+      }
+
+      .container-button {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+.opening {
+  animation: cardOpen 0.6s forwards;
+}
+
+.closing {
+  animation: cardClose 0.16s forwards;
+}
