@@ -4,13 +4,12 @@ import { IoMdStar } from "react-icons/io";
 import { CustomButton } from "../CustomButtom/CustomButton";
 import { FiPlus } from "react-icons/fi";
 import { IoMdSend } from "react-icons/io";
-import { useState } from "react";
 import { AnimatedCard } from "../AnimatedCard/AnimatedCard";
 
 export function CardDetails({ onClose }) {
   return (
     <>
-      <AnimatedCard className={`card-details-container`} onClose={onClose}>
+      <AnimatedCard className={`animated-card card-details-container`} onClose={onClose}>
         {({ requestClose }) => (
           <>
             <div className="header">
@@ -26,8 +25,8 @@ export function CardDetails({ onClose }) {
                   <p>Aula de</p>
                   <p>Reparos</p>
                 </div>
-                <div className="info-description">
-                  <p>
+                <div className="info-description-container">
+                  <p className="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quidem sit impedit placeat aspernatur error dolores fugiat!
                     Repellendus inventore sed amet corporis animi ea et autem

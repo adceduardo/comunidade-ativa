@@ -23,8 +23,6 @@
       border-radius: 8px;
       border: 1px solid var(--bs-gray-700);
       font-size: var(--fs-lg);
-      color: var(--text-secondary);
-      outline: none;
     }
 
     input[type="text"]::placeholder {

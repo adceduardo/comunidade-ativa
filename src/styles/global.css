@@ -29,7 +29,7 @@
   --text-hover: #06181b;
 
   --shadow-color: #f0f6f7;
-  
+
   --bg-btn-secondary: #005b85;
 
   --fs-xs: 0.75rem;
@@ -60,6 +60,14 @@ h3 {
   margin: 0;
 }
 
+input,
+textarea {
+  border: none;
+  color: var(--text-secondary);
+  outline: none;
+  caret-color: var(--text-primary);
+}
+
 .backdrop-blur {
   position: absolute;
   top: 0;
@@ -69,4 +77,67 @@ h3 {
   background-color: rgb(5 12 13 / 44%);
   backdrop-filter: blur(4px);
   z-index: 1;
+}
+
+@keyframes cardOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes cardClose {
+  from {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+}
+
+.opening {
+  animation: cardOpen 0.6s forwards;
+}
+
+.closing {
+  animation: cardClose 0.16s forwards;
+}
+
+.animated-card {
+  background-color: var(--bg-card);
+  color: #fff;
+  padding: 32px;
+  box-shadow: 0px 0px 8px 0px var(--bs-gray-500);
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      cursor: pointer;
+    }
+
+    h3 {
+      font-size: var(--fs-xl);
+      font-weight: bold;
+      color: #fff;
+
+      span {
+        color: var(--bs-cyan);
+      }
+    }
+  }
 }
