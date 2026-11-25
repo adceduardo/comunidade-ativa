@@ -141,3 +141,12 @@ textarea {
     }
   }
 }
+
+.table {
+  --bs-table-color: #fff;
+  --bs-table-bg: var(--bs-card);
+
+  tr{
+    height: min-content;
+  }
+}

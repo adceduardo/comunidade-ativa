@@ -1,0 +1,18 @@
+.table-responsive {
+  width: 100%;
+  display: flex;
+
+  h1 {
+    color: var(--text-secondary);
+  }
+
+  .empty-table {
+    margin: auto;
+    color: #fff;
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    box-shadow: 0px 0px 8px var(--bs-gray-700);
+    border-radius: 8px;
+  }
+}

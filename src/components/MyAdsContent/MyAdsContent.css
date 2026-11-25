@@ -1,7 +1,27 @@
 .my-ads-container {
-  margin: 32px;
-  height: 100%;
+  padding: 32px;
+  height: 100vh;
   width: 100%;
-  box-shadow: 0px 0px 12px 0px var(--bs-gray-700);
   content: "";
+  display: flex;
+  flex-direction: column;
+
+  header{
+    color: #fff;
+    align-items: center;
+    
+    h3{
+      font-weight: bold;
+    }
+  }
+
+  .content{
+    box-shadow: 0px 0px 8px 0px var(--bs-gray-700);
+    width: 100%;
+    display: flex;
+    flex: 1;
+    content: "";
+    margin-top: 32px;
+    border-radius: 8px;
+  }
 }
