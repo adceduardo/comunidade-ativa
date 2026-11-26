@@ -24,15 +24,17 @@ export function DashboardHeader() {
           <input type="text" placeholder="Buscar serviços..."></input>
           <FiSearch size={24} />
         </div>
-        <div className="filter-container">
-          <FiFilter size={20} />
+        <div className="d-flex" style={{height: "48px", gap: "16px"}}>
+          <div className="filter-container">
+            <FiFilter size={20} />
+          </div>
+          <CustomButton
+            label="Adicionar Anúncio"
+            Icon={FiPlus}
+            handleClick={() => setShowAdForm(true)}
+          />
+                </div>
         </div>
-        <CustomButton
-          label="Adicionar Anúncio"
-          Icon={FiPlus}
-          handleClick={() => setShowAdForm(true)}
-        />
-      </div>
     </div>
   );
 }

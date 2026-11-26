@@ -7,7 +7,7 @@ import { SideBarNav } from "./SidebarNav/SidebarNav"
 
 export function Sidebar(){
     return (
-        <div className="sidebar"> 
+        <div className="sidebar p-xs-4"> 
             <SidebarHeader />
             <SidebarBalance />
             <SideBarNav />

@@ -29,7 +29,7 @@ export function DashBoardContent() {
         </div>
       )}
       <DashboardHeader />
-      <h1 style={{ fontSize: "var(--fs-xxl)", marginTop: "32px" }}>
+      <h1 style={{ fontSize: "var(--fs-xxl)"}}>
         Olá, fulano! O que você precisa hoje?{" "}
       </h1>
       <div className="service-categories">

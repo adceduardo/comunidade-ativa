@@ -40,6 +40,10 @@
   --fs-xxl: 2rem;
 
   --header-height: 80px;
+
+  --s-lg: 32px;
+  --s-md: 16px;
+  --s-xs: 8px
 }
 
 body {

@@ -5,5 +5,7 @@
   font-size: var(--fs-xxl);
   display: flex;
   flex-direction: column;
+  padding: var(--s-lg);
+  gap: var(--s-lg);
 }
 

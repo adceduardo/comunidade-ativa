@@ -1,9 +1,9 @@
 .sidebar-nav {
-  padding: 32px;
   gap: 32px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  
 
   .nav-link {
     color: var(--text-secondary);

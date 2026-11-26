@@ -1,14 +1,13 @@
 .dashboard-header-container{
-  padding: 32px 0;
   height: 132px;
 }
 
 .dashboard-header {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 16px;
-  height: 48px;
+  min-height: var(--header-height);
 
   .input-container {
     position: relative;

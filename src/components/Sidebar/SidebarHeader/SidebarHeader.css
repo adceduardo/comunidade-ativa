@@ -1,9 +1,8 @@
 .sidebar-header {
-  padding: 32px;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  height: 132px;
+  min-height: var(--header-height);
   
   gap: 16px;
   
