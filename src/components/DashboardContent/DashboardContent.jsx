@@ -28,26 +28,29 @@ export function DashBoardContent() {
           <CardDetails onClose={() => setShowCardDetails(false)} />
         </div>
       )}
+
       <DashboardHeader />
-      <h1 style={{ fontSize: "var(--fs-xxl)"}}>
-        Olá, fulano! O que você precisa hoje?{" "}
-      </h1>
-      <div className="service-categories">
-        <CustomButton label={"Aulas particulares"} />
-        <CustomButton label={"Beleza"} />
-        <CustomButton label={"Aulas de múscia"} />
-        <CustomButton label={"Aulas de múscia"} />
-        <CustomButton label={"Aulas de múscia"} />
-      </div>
-      <div className="cards-container" ref={emblaRef}>
-        <div className="cards-track">
-          {cards.map((card) => (
-            <CardService
-              handleClickDetails={() => setShowCardDetails(!showCardDetails)}
-            />
-          ))}
+      <section>
+        <h1 style={{ fontSize: "var(--fs-xxl)" }}>
+          Olá, fulano! O que você precisa hoje?{" "}
+        </h1>
+        <div className="service-categories">
+          <CustomButton label={"Aulas particulares"} />
+          <CustomButton label={"Beleza"} />
+          <CustomButton label={"Aulas de múscia"} />
+          <CustomButton label={"Aulas de múscia"} />
+          <CustomButton label={"Aulas de múscia"} />
         </div>
-      </div>
+        <div className="cards-container" ref={emblaRef}>
+          <div className="cards-track">
+            {cards.map((card) => (
+              <CardService
+                handleClickDetails={() => setShowCardDetails(!showCardDetails)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

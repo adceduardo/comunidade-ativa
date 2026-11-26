@@ -43,7 +43,8 @@
 
   --s-lg: 32px;
   --s-md: 16px;
-  --s-xs: 8px
+  --s-sm: 8px;
+  --s-xs: 4px;
 }
 
 body {
@@ -148,9 +149,11 @@ textarea {
 
 .table {
   --bs-table-color: #fff;
-  --bs-table-bg: var(--bs-card);
+  --bs-table-bg: transparent;
+}
 
-  tr{
+.tbody {
+  tr {
     height: min-content;
   }
 }

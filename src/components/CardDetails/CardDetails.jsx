@@ -5,6 +5,7 @@ import { CustomButton } from "../CustomButtom/CustomButton";
 import { FiPlus } from "react-icons/fi";
 import { IoMdSend } from "react-icons/io";
 import { AnimatedCard } from "../AnimatedCard/AnimatedCard";
+import { FaHandshake } from "react-icons/fa6";
 
 export function CardDetails({ onClose }) {
   return (
@@ -63,9 +64,9 @@ export function CardDetails({ onClose }) {
                 <div className="container-button">
                   <CustomButton label={"Socilitar Agendamento"} Icon={FiPlus} />
                   <CustomButton
-                    label={"Enviar Mensagem"}
+                    label={"Negociar Valor"}
                     variant="secondary"
-                    Icon={IoMdSend}
+                    Icon={FaHandshake}
                     iconSize="20"
                   />
                 </div>
