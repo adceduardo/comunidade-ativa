@@ -17,13 +17,23 @@
     thead {
       border-radius: 8px;
       background-color: var(--bg-app);
+
+      tr {
+        background-color: var(--color-tertiary);
+      }
+
+      th {
+        color: #fff;
+      }
     }
 
-    th {
-      padding: var(--s-md);
-    }
+    th,
     td {
       padding: var(--s-md);
+    }
+
+    tr {
+      border-color: var(--bs-gray-600);
     }
 
     tbody {

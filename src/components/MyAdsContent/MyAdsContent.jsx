@@ -76,17 +76,19 @@ export function MyAdsContent() {
           />
         </div>
       )}
-      <header className="d-flex justify-content-between">
-        <h3>Meus Anúncios</h3>
-        <CustomButton
-          label={"Adicionar Anúncio"}
-          handleClick={() => {
-            setModeForm("add");
-            setShowAdForm(true);
-          }}
-          Icon={FiPlus}
-        />
-      </header>
+      <div style={{height: "var(--header-height)"}}>
+        <header className="d-flex justify-content-between">
+          <h3>Meus Anúncios</h3>
+          <CustomButton
+            label={"Adicionar Anúncio"}
+            handleClick={() => {
+              setModeForm("add");
+              setShowAdForm(true);
+            }}
+            Icon={FiPlus}
+          />
+        </header>
+      </div>
       <div className="content">
         <CustomTable columns={columns} data={data} />
       </div>
