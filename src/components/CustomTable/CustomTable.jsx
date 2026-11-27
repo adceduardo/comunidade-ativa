@@ -14,7 +14,7 @@ export function CustomTable({ columns = [], data = [], rowKey = "id" }) {
           <thead>
             <tr>
               {columns.map(({ key, label }) => (
-                <th key={key}>{label}</th>
+                <th key={key}>{label ? label : ""}</th>
               ))}
             </tr>
           </thead>

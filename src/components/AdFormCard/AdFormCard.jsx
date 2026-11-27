@@ -4,6 +4,7 @@ import "./AdFormCard.css";
 //Icones
 import { IoClose } from "react-icons/io5";
 import { FiPlus } from "react-icons/fi";
+import { FiSave } from "react-icons/fi";
 
 //Components
 import { AnimatedCard } from "../AnimatedCard/AnimatedCard";
@@ -14,16 +15,17 @@ import { AdInputsSchema } from "../../schemas/AdInputsSchema";
 import { AdValidateSchema } from "../../schemas/ValidateSchema";
 import { useState } from "react";
 
-export function AdFormCard({ mode = "add", onClose }) {
-  const INITIAL_FORM = Object.fromEntries(
+export function AdFormCard({ mode = "add", onClose, dataForm }) {
+  const INITIAL_DATA_FORM = Object.fromEntries(
     AdInputsSchema.map((input) => [input.name, ""]),
   );
 
-  const [formData, setFormData] = useState(INITIAL_FORM);
+  const [formData, setFormData] = useState(
+    mode !== "add" && dataForm ? dataForm : INITIAL_DATA_FORM,
+  );
   const [errors, setErrors] = useState([]);
 
-  const title =
-    mode === "add" ? "Adicionar" : mode === "edit" ? "Editar" : "Deletar";
+  const title = mode === "add" ? "Adicionar" : "Editar";
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -69,7 +71,7 @@ export function AdFormCard({ mode = "add", onClose }) {
           <>
             <div className="header d-flex p-2">
               <h3>{title} Anúncio</h3>
-              <IoClose size={36} color="red" onClick={requestClose} />
+              <IoClose size={32} color="red" onClick={requestClose} />
             </div>
             <div className="body">
               <form className="row p-0 m-0 d-flex gx-3 gy-4">
@@ -132,8 +134,8 @@ export function AdFormCard({ mode = "add", onClose }) {
                   marginTop: "24px",
                   marginBottom: "8px",
                 }}
-                label={title}
-                Icon={FiPlus}
+                label={mode === "add" ? "Adicionar" : "Salvar"}
+                Icon={mode === "add" ? FiPlus : FiSave}
                 handleClick={handleSubmit}
               />
             </div>

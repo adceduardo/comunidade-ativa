@@ -31,7 +31,7 @@ export function DashBoardContent() {
 
       <DashboardHeader />
       <section>
-        <h1 style={{ fontSize: "var(--fs-xxl)" }}>
+        <h1 style={{ fontSize: "1.75rem" }}>
           Olá, fulano! O que você precisa hoje?{" "}
         </h1>
         <div className="service-categories">

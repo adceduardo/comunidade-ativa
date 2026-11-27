@@ -17,7 +17,7 @@
     input {
       width: 100%;
       background-color: transparent;
-      height: 48px;
+      height: 40px;
       padding: 16px;
       border-radius: 8px;
       border: 1px solid var(--bs-gray-700);

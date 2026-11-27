@@ -78,6 +78,7 @@
           border-radius: 4px;
           font-weight: bold;
           box-shadow: 0px 0px 1px 0px;
+          white-space: nowRap;
 
           span {
             color: var(--text-secondary);

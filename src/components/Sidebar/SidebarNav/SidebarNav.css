@@ -1,5 +1,6 @@
 .sidebar-nav {
-  gap: 32px;
+  gap: var(--s-md);
+  margin-top: var(--s-md);
   display: flex;
   flex-direction: column;
   height: 100%;

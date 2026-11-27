@@ -30,7 +30,7 @@
     width: min-content;
     white-space: nowrap;
     font-weight: bold;
-    color: var(--bs-gray-500);
+    color: var(--bs-gray-300);
 
     span {
       position: absolute;
