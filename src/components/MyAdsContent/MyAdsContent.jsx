@@ -7,6 +7,15 @@ export function MyAdsContent() {
     {
       key: "title",
       label: "Titulo do serviço",
+      render: (dataRow) => {
+        const {title, description} = dataRow
+        return(
+          <div className="d-flex" style={{flexDirection: "column", gap: "8px"}}>
+            <h4>{title}</h4>
+            <p>{description}</p>
+          </div>
+        )
+      }
     },
     {
       key: "price",
@@ -22,6 +31,21 @@ export function MyAdsContent() {
     {
       id: 1,
       title: "Teste1",
+      description: "Conversação avançada e gramática",
+      price: "22",
+      local: "sbs",
+    },
+    {
+      id: 2,
+      title: "Teste2",
+      description: "Conversação avançada e gramática",
+      price: "22",
+      local: "sbs",
+    },
+    {
+      id: 3,
+      title: "Teste3",
+      description: "Conversação avançada e gramática",
     },
   ];
 

@@ -61,7 +61,8 @@ h1 {
 
 p,
 h1,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -144,16 +145,5 @@ textarea {
         color: var(--bs-cyan);
       }
     }
-  }
-}
-
-.table {
-  --bs-table-color: #fff;
-  --bs-table-bg: transparent;
-}
-
-.tbody {
-  tr {
-    height: min-content;
   }
 }

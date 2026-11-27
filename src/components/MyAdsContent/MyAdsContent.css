@@ -16,7 +16,7 @@
   }
 
   .content{
-    box-shadow: 0px 0px 8px 0px var(--bs-gray-700);
+    box-shadow: 0px 0px 4px 1px var(--bs-gray-500);
     width: 100%;
     display: flex;
     flex: 1;

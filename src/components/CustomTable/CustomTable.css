@@ -1,9 +1,43 @@
 .table-responsive {
   width: 100%;
-  display: flex;
+  background: var(--bg-card);
+  border-radius: 8px;
 
   h1 {
     color: var(--text-secondary);
+  }
+
+  .table {
+    --bs-table-color: #fff;
+    --bs-table-bg: transparent;
+
+    --bs-table-striped-color: #fff;
+    --bs-table-striped-bg: var(--bg-app);
+
+    thead {
+      border-radius: 8px;
+      background-color: var(--bg-app);
+
+    }
+
+    th {
+      padding: var(--s-md);
+    }
+    td {
+      padding: var(--s-md);
+    }
+
+    tbody{
+      td{
+        color: var(--text-secondary);
+      }
+
+      h4{
+        font-size: var(--fs-md);
+        color: #fff;
+      }
+
+    }
   }
 
   .empty-table {

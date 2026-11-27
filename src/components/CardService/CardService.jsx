@@ -9,8 +9,6 @@ import { CustomButton } from "../CustomButtom/CustomButton";
 import { FiPlus } from "react-icons/fi";
 
 export function CardService({ handleClickDetails }) {
-  console.log(handleClickDetails);
-
   return (
     <div className="card">
       <DiYii size={30} className="card-ornament" />
